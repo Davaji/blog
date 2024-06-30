@@ -33,7 +33,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
 
     Component.RecentNotes({
-      title: "Recent Notes",
+      title: "نوشته‌های اخیر",
       limit: 5,
       filter: (f) =>
         f.slug!.startsWith("posts/") && f.slug! !== "posts/index" && !f.frontmatter?.noindex,
