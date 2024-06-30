@@ -1,4 +1,4 @@
 ---
-title: Davaji.xyz
+title: davaji.xyz
 ---
 هنوز اینجا چیزی ننوشتم.
