@@ -1,6 +1,4 @@
 ---
-title: Welcome to Quartz
+title: به وبلاگ من خوش اومدین
 ---
-
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+هنوز اینجا چیزی ننوشتم.
