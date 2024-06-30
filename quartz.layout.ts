@@ -23,7 +23,6 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.DesktopOnly(Component.Graph()),
-    Component.DesktopOnly(Component.Backlinks()),
     Component.MobileOnly(Component.PageTitle()),
     Component.MobileOnly(Component.Darkmode()),
   ],
