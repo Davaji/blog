@@ -25,6 +25,15 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Graph()),
     Component.MobileOnly(Component.PageTitle()),
     Component.MobileOnly(Component.Darkmode()),
+
+    Component.RecentNotes({
+      title: "Recent Notes",
+      limit: 10,
+      filter: (f) =>
+        f.slug!.startsWith("/") && f.slug! !== "/index" && !f.frontmatter?.noindex,
+      linkToMore: "/" as SimpleSlug,
+    }),
+
   ],
   right: [
     Component.DesktopOnly(Component.PageTitle()),
@@ -32,7 +41,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Explorer(),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.MobileOnly(Component.Backlinks()),
   ],
 }
 
