@@ -33,7 +33,7 @@ export const defaultContentPageLayout: PageLayout = {
 
     Component.RecentNotes({
       title: "Recent Notes",
-      limit: 7,
+      limit: 1,
       filter: (f) =>
         f.slug!.startsWith("posts/") && f.slug! !== "posts/index" && !f.frontmatter?.noindex,
       linkToMore: "posts/" as SimpleSlug,
